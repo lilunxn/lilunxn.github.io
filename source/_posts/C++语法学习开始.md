@@ -4,9 +4,7 @@ date: 2018-11-02 18:37:44
 tags: 
 categories: C++基础语法部分
 ---
-
-这里是我的第一个基础C++语法段落。以“hello world”作为开始,test test
-
+这里是我的第一个基础C++语法段落。以“hello world”作为开始
 ```
 #include<iostream>
 using namespace std;
