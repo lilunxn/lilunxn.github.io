@@ -5,7 +5,7 @@ tags:
 categories: C++基础语法部分
 ---
 
-这里是我的第一个基础C++语法段落。以“hello world”作为开始
+这里是我的第一个基础C++语法段落。以“hello world”作为开始,test test
 
 ```
 #include<iostream>
