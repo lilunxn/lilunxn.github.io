@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[test2]]></title>
+    <url>%2F2018%2F11%2F03%2Ftest2%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[C++语法学习开始]]></title>
     <url>%2F2018%2F11%2F02%2FC%2B%2B%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%BC%80%E5%A7%8B%2F</url>
     <content type="text"><![CDATA[这里是我的第一个基础C++语法段落。以“hello world”作为开始 123456789#include&lt;iostream&gt;using namespace std;int main()&#123; char a[]="hello world"; cout&lt;&lt;a; return 0;&#125; 运行上述程序，即可在屏幕上输出“hello world”语句。]]></content>
