@@ -1,7 +1,7 @@
 ---
 title: hexo多端发布相关操作
 date: 2018-11-04 10:25:14
-tags: hexo
+tags: 
 categories： 其他操作
 ---
 
