@@ -14,3 +14,4 @@ git add source //将新建文件进行添加
 git commit -m "将添加说明写在这里"
 git push origin hexo //将本地修改push到远程仓库
 hexo d -g //生成并发表
+```
