@@ -2,7 +2,7 @@
 title: hexo多端发布相关操作
 date: 2018-11-04 10:25:14
 tags: 
-categories： 其他操作
+categories: 其他操作
 ---
 
 在不同的端口进行相关操作时，需要按照下述方法进行：
