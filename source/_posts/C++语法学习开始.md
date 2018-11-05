@@ -2,7 +2,9 @@
 title: C++语法学习开始
 date: 2018-11-02 18:37:44
 tags: 
-categories: C++基础语法部分
+categories: 
+- C++基础语法部分
+- 基础
 ---
 这里是我的第一个基础C++语法段落。以“hello world”作为开始
 ```
