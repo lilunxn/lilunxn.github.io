@@ -6,6 +6,7 @@
     <content type="text"><![CDATA[C++中的转义字符总结如下： 字符名称 C++代码 十进制ASCII码值 换行符 \n 10 水平制表符 \t 9 垂直制表符 \v 11 退格 \b 8 回车 \r 13 需要注意的是，处理转义序列时，要像处理常规序列一致，它们可以被嵌入较长的字符串中，程序依然可以识别并执行它们。在单独使用时，由于它们是一个单字符，因此也要用单引号括起。]]></content>
       <categories>
         <category>C++基础语法部分</category>
+        <category>基础</category>
       </categories>
       <tags>
         <tag>转义字符</tag>
@@ -17,6 +18,7 @@
     <content type="text"><![CDATA[#整形整形用于存储整数，C++所存储的整数是所有整数的一个子集。针对不同的区间，C++提供了多种不同的整形类型。具体如下所示： 类型 位数 short 至少为16位 int 至少与short一样长 long 至少32位，且至少与int一样长 long long 至少64位，且至少与long一样长 在上述变量声明中，在最开始加上unsigned，则为声明一个无符号数。此时它不能表示负数，但是正数的表示范围将扩大一倍上述变量可由以下形式进行声明及初始化： 123456789101112//变量声明方法short a;int b;long c;long long d;unsigned d1; //声明无符号数//变量声明与初始化int e=5;int f(123); //注意，该种初始化方式仅限于C++语言使用int g=e+f;int h=&#123;1&#125;;int i&#123;1&#125;; //大括号的初始化方法通常用于数组和结构，但在C++中，也可以用于进行单值变量的初始化 在C++中，默认使用十进制进行数字表示。但通过控制也可以输出其他进制的数字。如在下面的程序段中，输出结果将为“2a”，也就是42的十六进制表示。 123int chest=42;cout&lt;&lt;hex;cout&lt;&lt;chest; #字符类型字符类型char也可以被当做是一种整形，是专门为了存储字符而设计的。在计算机中，这些字符由其ASCII码值进行保存。这里请注意，由于在char中保存的其实是字符的ASCII码值，因而保存的其实是一个整数，故而对于整数的所有运算值对于char而言全部适用。在输出时，cout会根据char类型，输出该数值对应的字符。如下所示： 1234char A;cin&gt;&gt;A;A=A+1;cout&lt;&lt;A; 此时的输入输出将如下所示： 12ab]]></content>
       <categories>
         <category>C++基础语法部分</category>
+        <category>基础</category>
       </categories>
   </entry>
   <entry>
@@ -47,6 +49,7 @@
     <content type="text"><![CDATA[这里是我的第一个基础C++语法段落。以“hello world”作为开始123456789#include&lt;iostream&gt;using namespace std;int main()&#123; char a[]="hello world"; cout&lt;&lt;a; return 0;&#125; 运行上述程序，即可在屏幕上输出“hello world”语句。]]></content>
       <categories>
         <category>C++基础语法部分</category>
+        <category>基础</category>
       </categories>
   </entry>
 </search>

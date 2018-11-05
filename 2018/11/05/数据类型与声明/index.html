@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="朴夏SJTU">
 <meta property="og:description" content="#整形整形用于存储整数，C++所存储的整数是所有整数的一个子集。针对不同的区间，C++提供了多种不同的整形类型。具体如下所示：    类型 位数     short 至少为16位   int 至少与short一样长   long 至少32位，且至少与int一样长   long long 至少64位，且至少与long一样长    在上述变量声明中，在最开始加上unsigned，则为声明一个无符号数。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-05T10:15:01.810Z">
+<meta property="og:updated_time" content="2018-11-05T10:25:57.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据类型与声明">
 <meta name="twitter:description" content="#整形整形用于存储整数，C++所存储的整数是所有整数的一个子集。针对不同的区间，C++提供了多种不同的整形类型。具体如下所示：    类型 位数     short 至少为16位   int 至少与short一样长   long 至少32位，且至少与int一样长   long long 至少64位，且至少与long一样长    在上述变量声明中，在最开始加上unsigned，则为声明一个无符号数。">
@@ -377,7 +377,7 @@
                 
               
 
-              <time title="创建时间：2018-11-05 17:50:55 / 修改时间：18:15:01" itemprop="dateCreated datePublished" datetime="2018-11-05T17:50:55+08:00">2018-11-05</time>
+              <time title="创建时间：2018-11-05 17:50:55 / 修改时间：18:25:57" itemprop="dateCreated datePublished" datetime="2018-11-05T17:50:55+08:00">2018-11-05</time>
             
 
             
@@ -400,6 +400,13 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/C-基础语法部分/" itemprop="url" rel="index"><span itemprop="name">C++基础语法部分</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/C-基础语法部分/基础/" itemprop="url" rel="index"><span itemprop="name">基础</span></a></span>
 
                 
                 
@@ -464,7 +471,7 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//变量声明方法</span></span><br><span class="line"><span class="keyword">short</span> a;</span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"><span class="keyword">long</span> c;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> d;</span><br><span class="line"><span class="keyword">unsigned</span> d1; <span class="comment">//声明无符号数</span></span><br><span class="line"><span class="comment">//变量声明与初始化</span></span><br><span class="line"><span class="keyword">int</span> e=<span class="number">5</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">f</span><span class="params">(<span class="number">123</span>)</span></span>; <span class="comment">//注意，该种初始化方式仅限于C++语言使用</span></span><br><span class="line"><span class="keyword">int</span> g=e+f;</span><br><span class="line"><span class="keyword">int</span> h=&#123;<span class="number">1</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> i&#123;<span class="number">1</span>&#125;; <span class="comment">//大括号的初始化方法通常用于数组和结构，但在C++中，也可以用于进行单值变量的初始化</span></span><br></pre></td></tr></table></figure>
 <p><strong>在C++中，默认使用十进制进行数字表示。但通过控制也可以输出其他进制的数字。</strong>如在下面的程序段中，输出结果将为“2a”，也就是42的十六进制表示。</p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int chest=<span class="number">42</span><span class="comment">;</span></span><br><span class="line">cout&lt;&lt;hex<span class="comment">;</span></span><br><span class="line">cout&lt;&lt;chest<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-<p>#字符类型<br>字符类型char也可以被当做是一种整形，是专门为了存储字符而设计的。在计算机中，这些字符由其ASCII码值进行保存。这里请注意，由于在char中保存的其实是字符的ASCII码值，因而保存的其实是一个整数，故而对于整数的所有运算值对于char而言全部适用。在输出时，cout会根据char类型，输出该数值对应的字符。如下所示：</p>
+<p>#字符类型<br>字符类型char也可以被当做是一种整形，是专门为了存储字符而设计的。在计算机中，这些字符由其ASCII码值进行保存。这里请注意，由于在char中保存的其实是字符的ASCII码值，因而保存的其实是一个整数，<strong>故而对于整数的所有运算值对于char而言全部适用</strong>。在输出时，cout会根据char类型，输出该数值对应的字符。如下所示：</p>
 <figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">char <span class="keyword">A</span><span class="comment">;</span></span><br><span class="line">cin&gt;&gt;<span class="keyword">A</span><span class="comment">;</span></span><br><span class="line"><span class="keyword">A</span>=<span class="keyword">A</span>+<span class="number">1</span><span class="comment">;</span></span><br><span class="line">cout&lt;&lt;<span class="keyword">A</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <p>此时的输入输出将如下所示：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
@@ -585,7 +592,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
