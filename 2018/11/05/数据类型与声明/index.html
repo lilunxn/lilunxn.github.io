@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="朴夏SJTU">
 <meta property="og:description" content="整型一般整型整形用于存储整数，C++所存储的整数是所有整数的一个子集。针对不同的区间，C++提供了多种不同的整形类型。具体如下所示：    类型 位数     short 至少为16位   int 至少与short一样长   long 至少32位，且至少与int一样长   long long 至少64位，且至少与long一样长    在上述变量声明中，在最开始加上unsigned，则为声明一个无符">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-05T10:55:02.426Z">
+<meta property="og:updated_time" content="2018-11-05T13:38:04.127Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据类型与声明">
 <meta name="twitter:description" content="整型一般整型整形用于存储整数，C++所存储的整数是所有整数的一个子集。针对不同的区间，C++提供了多种不同的整形类型。具体如下所示：    类型 位数     short 至少为16位   int 至少与short一样长   long 至少32位，且至少与int一样长   long long 至少64位，且至少与long一样长    在上述变量声明中，在最开始加上unsigned，则为声明一个无符">
@@ -377,7 +377,7 @@
                 
               
 
-              <time title="创建时间：2018-11-05 17:50:55 / 修改时间：18:55:02" itemprop="dateCreated datePublished" datetime="2018-11-05T17:50:55+08:00">2018-11-05</time>
+              <time title="创建时间：2018-11-05 17:50:55 / 修改时间：21:38:04" itemprop="dateCreated datePublished" datetime="2018-11-05T17:50:55+08:00">2018-11-05</time>
             
 
             
@@ -475,6 +475,8 @@
 <figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">char <span class="keyword">A</span><span class="comment">;</span></span><br><span class="line">cin&gt;&gt;<span class="keyword">A</span><span class="comment">;</span></span><br><span class="line"><span class="keyword">A</span>=<span class="keyword">A</span>+<span class="number">1</span><span class="comment">;</span></span><br><span class="line">cout&lt;&lt;<span class="keyword">A</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <p>此时的输入输出将如下所示：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+<p>对于字符类型有一点需要特别注意，<strong>即在初始化时，需要用单引号括住而不是双引号</strong>。在C++中，单引号代表单个字符，而双引号则代表字符串，即末尾有结束符’\0’。具体如下：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> <span class="keyword">a</span>=<span class="string">'A'</span>;<span class="comment"> //合法</span></span><br><span class="line"><span class="keyword">char</span> <span class="keyword">a</span>=<span class="string">"A"</span>;<span class="comment"> //不合法，右侧等价于'A'+'\0'</span></span><br></pre></td></tr></table></figure>
 <h2 id="bool类型"><a href="#bool类型" class="headerlink" title="bool类型"></a>bool类型</h2><p>bool类型是一种逻辑运算符，其值有两种形式，分别为true和false。在判断语句中，经常使用。<strong>请注意，对于bool变量赋值时，所有非零值均会被转换为true，0则会被转换为false。</strong></p>
 <figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">bool</span> is_ready=<span class="literal">true</span>; //定义布尔变量，初始化为<span class="literal">true</span></span><br><span class="line"><span class="built_in">int</span> ans=<span class="literal">true</span>; //<span class="literal">true</span>被转化为整形时，值为<span class="number">1</span></span><br><span class="line"><span class="built_in">int</span> ans=<span class="literal">false</span>; //<span class="literal">false</span>被转化为整形时，值为<span class="number">0</span></span><br><span class="line"><span class="built_in">bool</span> start=-<span class="number">100</span>; //非零值，为<span class="literal">true</span></span><br><span class="line"><span class="built_in">bool</span> <span class="keyword">end</span>=<span class="number">0</span>; //初值为<span class="number">0</span>，为<span class="literal">false</span></span><br></pre></td></tr></table></figure>
 <h1 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h1><p>与整型一样，浮点类型一般也有三种表示形式，float、double和long double。一般来讲，float的位数至少为32位，double的位数不小于float且至少为48位，而long double则要更长。<br>相比于整型，浮点类型可以表达的数字更大，但是其运算效率一般低于整型。同时，由于存在精度的问题，浮点类型的计算结果可能会出现偏差。</p>
@@ -627,7 +629,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -758,7 +760,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2k字</span>
+  <span class="post-count">博客全站共2.8k字</span>
 </div>
         
 
