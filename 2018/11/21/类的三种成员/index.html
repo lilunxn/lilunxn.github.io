@@ -108,23 +108,24 @@
 
 
 
-  <meta name="description" content="编程道路上的小学生">
-<meta property="og:type" content="website">
-<meta property="og:title" content="朴夏SJTU">
-<meta property="og:url" content="https://lilunxn.github.io/tags/hexo/index.html">
+  <meta name="description" content="类的三种成员对于类而言，一共有三种成员类型，分别为private,protected,public.其中，如果数据成员的类型为private，可以默认不写。对于在类外使用的情况，private和protected是一致的，均不可以由外部直接访问，而public所包含的成员是可以由外部直接访问的。下面给出一个基本的例子。 12345678910111213141516171819202122clas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="类的三种成员与继承">
+<meta property="og:url" content="https://lilunxn.github.io/2018/11/21/类的三种成员/index.html">
 <meta property="og:site_name" content="朴夏SJTU">
-<meta property="og:description" content="编程道路上的小学生">
+<meta property="og:description" content="类的三种成员对于类而言，一共有三种成员类型，分别为private,protected,public.其中，如果数据成员的类型为private，可以默认不写。对于在类外使用的情况，private和protected是一致的，均不可以由外部直接访问，而public所包含的成员是可以由外部直接访问的。下面给出一个基本的例子。 12345678910111213141516171819202122clas">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-21T13:58:41.979Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="朴夏SJTU">
-<meta name="twitter:description" content="编程道路上的小学生">
+<meta name="twitter:title" content="类的三种成员与继承">
+<meta name="twitter:description" content="类的三种成员对于类而言，一共有三种成员类型，分别为private,protected,public.其中，如果数据成员的类型为private，可以默认不写。对于在类外使用的情况，private和protected是一致的，均不可以由外部直接访问，而public所包含的成员是可以由外部直接访问的。下面给出一个基本的例子。 12345678910111213141516171819202122clas">
 
 
 
 
 
 
-  <link rel="canonical" href="https://lilunxn.github.io/tags/hexo/">
+  <link rel="canonical" href="https://lilunxn.github.io/2018/11/21/类的三种成员/">
 
 
 
@@ -134,7 +135,7 @@
   };
 </script>
 
-  <title>标签: hexo | 朴夏SJTU</title>
+  <title>类的三种成员与继承 | 朴夏SJTU</title>
   
 
 
@@ -183,7 +184,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -236,7 +237,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
   </li>
@@ -314,82 +315,279 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>hexo<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lilunxn.github.io/2018/11/21/类的三种成员/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lilunxn">
+      <meta itemprop="description" content="编程道路上的小学生">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="朴夏SJTU">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/11/04/hexo-oper/" itemprop="url">
-              
-                <span itemprop="name">hexo多端发布相关操作</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">类的三种成员与继承
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-04T10:25:14+08:00" content="2018-11-04">
-          11-04
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-21 21:37:31 / 修改时间：21:58:41" itemprop="dateCreated datePublished" datetime="2018-11-21T21:37:31+08:00">2018-11-21</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/C-基础语法部分/" itemprop="url" rel="index"><span itemprop="name">C++基础语法部分</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/C-基础语法部分/类/" itemprop="url" rel="index"><span itemprop="name">类</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="类的三种成员"><a href="#类的三种成员" class="headerlink" title="类的三种成员"></a>类的三种成员</h1><p>对于类而言，一共有三种成员类型，分别为private,protected,public.<br>其中，如果数据成员的类型为private，可以默认不写。<br>对于在类外使用的情况，private和protected是一致的，均不可以由外部直接访问，而public所包含的成员是可以由外部直接访问的。下面给出一个基本的例子。</p>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Time <span class="comment">//简单的时间类定义</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">private</span>:</span><br><span class="line">		<span class="built_in">int</span> <span class="built_in">hour</span>;</span><br><span class="line">		<span class="built_in">int</span> <span class="built_in">minute</span>;</span><br><span class="line">	<span class="keyword">protected</span>:</span><br><span class="line">		<span class="built_in">int</span> <span class="built_in">second</span>;</span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">		Time(); <span class="comment">//构造函数</span></span><br><span class="line">		showtime();</span><br><span class="line">		get_hour();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> main() <span class="comment">//测试函数</span></span><br><span class="line">&#123;</span><br><span class="line">	Time A;</span><br><span class="line">	A.showtime(); <span class="comment">//调用了公有成员，合法</span></span><br><span class="line">	cout&lt;&lt;A.<span class="built_in">hour</span>; <span class="comment">//调用了私有成员，不合法</span></span><br><span class="line">	cout&lt;&lt;A.<span class="built_in">second</span>; <span class="comment">//调用了保护成员，不合法</span></span><br><span class="line">	A.get_hour(); <span class="comment">//调用了公有成员，合法</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>而对于私有成员和保护成员的区别，需要在继承的时候才能体现出来</p>
+<h1 id="类的继承类型"><a href="#类的继承类型" class="headerlink" title="类的继承类型"></a>类的继承类型</h1><p>通过基类派生出新类的过程称为类的继承，类的继承同样也有private，public，protected三种形式。现在分述如下：</p>
+<h2 id="public继承"><a href="#public继承" class="headerlink" title="public继承"></a>public继承</h2><p>该种继承方式下，满足如下表格：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">基类中的访问限定</th>
+<th style="text-align:center">派生类对基类成员的限定</th>
+<th style="text-align:center">外部函数访问</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">public</td>
+<td style="text-align:center">public</td>
+<td style="text-align:center">可直接访问</td>
+</tr>
+<tr>
+<td style="text-align:center">protected</td>
+<td style="text-align:center">protected</td>
+<td style="text-align:center">不可直接访问</td>
+</tr>
+<tr>
+<td style="text-align:center">private</td>
+<td style="text-align:center">不可直接访问</td>
+<td style="text-align:center">不可直接访问</td>
+</tr>
+</tbody>
+</table>
+<p><strong>请注意，基类中的protected类型是可以在派生类中直接访问的</strong></p>
+<h2 id="private继承"><a href="#private继承" class="headerlink" title="private继承"></a>private继承</h2><p>该种继承方式下，满足如下表格：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">基类中的访问限定</th>
+<th style="text-align:center">派生类对基类成员的限定</th>
+<th style="text-align:center">外部函数访问</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">public</td>
+<td style="text-align:center">private</td>
+<td style="text-align:center">不可直接访问</td>
+</tr>
+<tr>
+<td style="text-align:center">protected</td>
+<td style="text-align:center">private</td>
+<td style="text-align:center">不可直接访问</td>
+</tr>
+<tr>
+<td style="text-align:center">private</td>
+<td style="text-align:center">不可直接访问</td>
+<td style="text-align:center">不可直接访问</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这里相当于将基类的所有成员变成了派生类的私有成员</strong></p>
+<h2 id="protected继承"><a href="#protected继承" class="headerlink" title="protected继承"></a>protected继承</h2><p>该种继承方式下，满足如下表格：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">基类中的访问限定</th>
+<th style="text-align:center">派生类对基类成员的限定</th>
+<th style="text-align:center">外部函数访问</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">public</td>
+<td style="text-align:center">protected</td>
+<td style="text-align:center">不可直接访问</td>
+</tr>
+<tr>
+<td style="text-align:center">protected</td>
+<td style="text-align:center">protected</td>
+<td style="text-align:center">不可直接访问</td>
+</tr>
+<tr>
+<td style="text-align:center">private</td>
+<td style="text-align:center">不可直接访问</td>
+<td style="text-align:center">不可直接访问</td>
+</tr>
+</tbody>
+</table>
+<p>结合上述过程可以看出，private类型和protected类型在派生类中的区别，即<strong>protected类型是一种外部无法直接调用，但可以由派生类直接调用的成员类型</strong>。</p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/07/构造函数与析构函数/" rel="next" title="构造函数与析构函数">
+                <i class="fa fa-chevron-left"></i> 构造函数与析构函数
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -410,8 +608,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -505,6 +712,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#类的三种成员"><span class="nav-number">1.</span> <span class="nav-text">类的三种成员</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类的继承类型"><span class="nav-number">2.</span> <span class="nav-text">类的继承类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#public继承"><span class="nav-number">2.1.</span> <span class="nav-text">public继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#private继承"><span class="nav-number">2.2.</span> <span class="nav-text">private继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protected继承"><span class="nav-number">2.3.</span> <span class="nav-text">protected继承</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -651,6 +874,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 

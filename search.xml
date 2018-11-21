@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[类的三种成员与继承]]></title>
+    <url>%2F2018%2F11%2F21%2F%E7%B1%BB%E7%9A%84%E4%B8%89%E7%A7%8D%E6%88%90%E5%91%98%2F</url>
+    <content type="text"><![CDATA[类的三种成员对于类而言，一共有三种成员类型，分别为private,protected,public.其中，如果数据成员的类型为private，可以默认不写。对于在类外使用的情况，private和protected是一致的，均不可以由外部直接访问，而public所包含的成员是可以由外部直接访问的。下面给出一个基本的例子。 12345678910111213141516171819202122class Time //简单的时间类定义&#123; private: int hour; int minute; protected: int second; public: Time(); //构造函数 showtime(); get_hour();&#125;;int main() //测试函数&#123; Time A; A.showtime(); //调用了公有成员，合法 cout&lt;&lt;A.hour; //调用了私有成员，不合法 cout&lt;&lt;A.second; //调用了保护成员，不合法 A.get_hour(); //调用了公有成员，合法 return 0;&#125; 而对于私有成员和保护成员的区别，需要在继承的时候才能体现出来 类的继承类型通过基类派生出新类的过程称为类的继承，类的继承同样也有private，public，protected三种形式。现在分述如下： public继承该种继承方式下，满足如下表格： 基类中的访问限定 派生类对基类成员的限定 外部函数访问 public public 可直接访问 protected protected 不可直接访问 private 不可直接访问 不可直接访问 请注意，基类中的protected类型是可以在派生类中直接访问的 private继承该种继承方式下，满足如下表格： 基类中的访问限定 派生类对基类成员的限定 外部函数访问 public private 不可直接访问 protected private 不可直接访问 private 不可直接访问 不可直接访问 这里相当于将基类的所有成员变成了派生类的私有成员 protected继承该种继承方式下，满足如下表格： 基类中的访问限定 派生类对基类成员的限定 外部函数访问 public protected 不可直接访问 protected protected 不可直接访问 private 不可直接访问 不可直接访问 结合上述过程可以看出，private类型和protected类型在派生类中的区别，即protected类型是一种外部无法直接调用，但可以由派生类直接调用的成员类型。]]></content>
+      <categories>
+        <category>C++基础语法部分</category>
+        <category>类</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[构造函数与析构函数]]></title>
     <url>%2F2018%2F11%2F07%2F%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[构造函数和析构函数是类中定义的两种特殊函数，现分述如下： 构造函数构造函数的定义构造函数是类定义中的一种特殊函数，其作用是在类声明时给类成员进行初始化操作。其基本的函数形式如下所示： 1234&lt;类名&gt; (&lt;参数表&gt;)&#123; &lt;函数体&gt;&#125; 需要注意的是，构造函数没有返回值，因而不需要标明返回值类型。同时，构造函数的名称与类名称必须完全一致。下面以时间类为例，说明构造函数的使用方法。 12345678910111213141516class Time&#123; private: int hour,minute,second; public: Time(int h=1,int m=30,int s=30) //构造函数，可以接受三个变量的输入，若没有输入，则自动初始化为1:30:30 &#123; hour=h;minute=m;second=s; &#125;&#125;;int main()&#123; Time A; //没有参数，类中成员自动初始化为1:30:30 Time B(2,30,59); //根据初始化参数将成员初始化为2:30:59&#125; 构造函数的重载和其他函数一样，构造函数也支持重载，下面仍以时间类为例，通过构造函数重载实现类成员的多重初始化方式： 12345678910class Time&#123; private: int hour,minute,second; public: Time(); //无参数初始化函数 Time(int,int,int); //在构造函数体中进行初始化，需继续补充函数定义 Time(int hour=3,int minute=25,int second=30); //默认参数初始化 Time(Time &amp;t); //使用其他参数初始化，注意结尾的一对大括号（这里借用了同为Time类的对象t进行了初始化）&#125;; //上述构造函数的定义还需要在类定义之外补充完整 析构函数析构函数也是类定义中的一种特殊函数，其作用在于，当类对象被回收时，析构函数将会被自动执行。很多情况下用于完成一些对象呗撤销之前的清理工作。其基本函数形式如下所示： 1234~&lt;类名&gt;()&#123; &lt;函数体&gt;&#125; 和构造函数一样，析构函数也没有返回值，且函数名与类名必须完全一致，且在类名之前要加上波浪号,同时需要注意，析构函数不得带有任何参数。当类对象被回收时，该对象的析构函数将会自动执行。]]></content>
